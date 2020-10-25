@@ -1,18 +1,24 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div>
+    <home-component-1/>
+    <home-component-2/>
   </div>
 </template>
-
 <script lang="ts">
-import Vue from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
-
-export default Vue.extend({
-  name: 'Home',
-  components: {
-    HelloWorld,
-  },
-});
+  import Vue from 'vue';
+  import HomeComponent1 from '../components/HomeComponent1.vue';
+  import HomeComponent2 from '../components/HomeComponent2.vue';
+  import { mapGetters } from 'vuex'
+  export default Vue.extend({
+    name: 'Home',
+    components: {
+      HomeComponent1,
+      HomeComponent2
+    },
+    computed: {
+      ...mapGetters(['isLogged'])
+    }
+  })  
 </script>
+<style scoped>  
+</style>
