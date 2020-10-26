@@ -17,4 +17,13 @@
     img#openWeather{
       width: 300px;
     }
+    @media screen and (max-width: 851px) {
+      div.centralImageOpenWeather{
+        width: 90%;
+        margin: -0.4em auto -0.4em auto;
+      }
+      img#openWeather{
+        width: 250px;
+      }
+    }
 </style>

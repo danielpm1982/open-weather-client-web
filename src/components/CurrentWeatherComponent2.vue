@@ -110,4 +110,21 @@
         padding: 0.3em 1em 0.3em 1em;
         font-size: 1.1em;
     }
+    @media screen and (max-width: 851px) {
+        div.centralTextOpenWeather{
+            font-size: 0.8em;
+            margin-top: 0.5em;
+            margin-bottom: 2em;
+        }
+        input#city, input#cityId{
+            font-size: 1.2em;
+            margin-bottom: 1em;
+            padding: 0.3em;
+            width: 80%;
+        }
+        input[type=submit]{
+            padding: 0.3em 1em 0.3em 1em;
+            font-size: 1em;
+        }
+    }
 </style>

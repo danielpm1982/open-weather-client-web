@@ -71,6 +71,18 @@
         margin-top: 1em;
         margin-bottom: 1em;
     }
+    @media screen and (max-width: 851px) {
+        div.centralTextWeatherResponse{
+            width: 90%;
+            padding: 0.5em;
+            font-size: 0.8em;
+            border: none;
+        }
+        footer#footerTextWeatherResponse{
+            margin-top: 0em;
+            margin-bottom: 2em;
+        }
+    }
 </style>
 
 This component simply gets the weatherInfoObj from the Vuex store, treats its 

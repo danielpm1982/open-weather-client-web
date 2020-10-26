@@ -48,6 +48,17 @@
   a:hover{
     color: lightskyblue;;
   }
+  @media screen and (max-width: 851px) {
+    #nav {
+      padding: 20px 0px 20px 0px;
+      width: 100%;
+      font-size: 0.8em;
+    }
+    #nav a{
+      margin-right: 0.5em;
+      margin-left: 0.5em;
+    }
+  }
 </style>
 
 

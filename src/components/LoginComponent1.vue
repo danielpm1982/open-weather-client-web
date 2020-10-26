@@ -17,4 +17,13 @@
     img#login{
         width: 100px;
     }
+    @media screen and (max-width: 851px) {
+        div.centralImageLogin{
+            width: 80%;
+            margin: 0.5em auto 0.5em auto;
+        }
+        img#login{
+            width: 90px;
+        } 
+    }
 </style>

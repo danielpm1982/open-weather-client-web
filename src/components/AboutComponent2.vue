@@ -39,6 +39,25 @@
     color: greenyellow;
     margin-right: 1em;
   }
+  @media screen and (max-width: 851px) {
+    div.centralTextAbout{
+      width: 90%;
+      font-size: 0.9em;
+      margin: 2em auto 2em auto;
+      text-align: center;
+    }
+    div.centralTextAbout div.centerAlign{
+      margin: 0em auto 2.5em auto;
+    }
+    div.centralTextAbout div.leftAlign{
+      font-size: 0.75em;
+      width: 100%;
+    }
+    div.centralTextAbout div.leftAlign span.linkDescription{
+      margin: 0em 0.5em 0em 0em;
+      line-height: 2;
+    }
+  }
 </style>
 
 The links here open in a new window, not in the single page main window,

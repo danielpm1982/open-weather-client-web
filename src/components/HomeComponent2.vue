@@ -45,6 +45,21 @@
     padding: 0em 1em 0em 1em;
   }
   p{
-    margin-top: 2em;
+    margin-top: 1em;
+  }
+  @media screen and (max-width: 851px) {
+    h1{
+      font-size: 1.4em;
+      margin-bottom: -0.5em;
+    }
+    h2{
+      font-size: 1.2em;
+      margin-bottom: -0.7em;
+    }
+    div.centralTextMain{
+      width: 90%;
+      padding: 0em 0em 0em 0em;
+      font-size: 0.7em;
+    }
   }
 </style>

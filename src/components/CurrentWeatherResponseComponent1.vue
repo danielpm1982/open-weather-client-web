@@ -19,4 +19,13 @@
     img#weatherResponse{
         width: 120px;
     }
+    @media screen and (max-width: 851px) {
+        div.centralImageWeatherResponse{
+            width: 50%;
+            margin: 0em auto 0em auto;
+        }
+        img#weatherResponse{
+            width: 80px;
+        }
+    }
 </style>

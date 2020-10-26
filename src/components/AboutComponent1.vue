@@ -17,4 +17,13 @@
   img#about{
     width: 200px;
   }
+  @media screen and (max-width: 851px) {
+    div.centralImageAbout{
+      width: 90%;
+      margin: 0.8em auto 1.2em auto;
+    }
+    img#about{
+      width: 150px;
+    }
+  }
 </style>

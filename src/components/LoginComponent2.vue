@@ -65,6 +65,25 @@
         padding: 0.3em 1em 0.3em 1em;
         font-size: 1.1em;
     }
+    @media screen and (max-width: 851px) {
+      div.centralTextLogin{
+        width: 90%;
+        font-size: 0.9em;
+      }
+      form{
+          padding: 1.5em;
+      }
+      form input#username, input#password{
+          font-size: 1.2em;
+          margin-bottom: 0.8em;
+          padding: 0.3em;
+          width: 95%;
+      }
+      input[type=submit]{
+          padding: 0.3em 1em 0.3em 1em;
+          font-size: 1em;
+      }
+    }
 </style>
 
 
