@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h1>Hello <span :style="{ color: getUserNameColorLocal }">{{ getUserNameLocal }}</span> !</h1>
-    <h2>Welcome to danielpm1982.com</h2>
+    <h1>{{ greeting1 }}<span :style="{ color: getUserNameColorLocal }">{{ getUserNameLocal }}</span> !</h1>
+    <h2>{{ greeting2 }}</h2>
     <div class="centralTextMain">
-      <p>This is a Single Page Application (SPA) REST API Client Web App, created with Node.js, npm, Webpack, Babel, Eslint, Vue-cli, Vue.js, Vue-router, Vuex, Axios, JavaScript ES6+ and TypeScript.</p>
+      <p>{{ description }}</p>
     </div>
   </div>
 </template>
@@ -13,7 +13,11 @@
   export default Vue.extend({
     name: 'HomeComponent2',
     data(){
-      return {}
+      return {
+        greeting1: "Hello ",
+        greeting2: "Welcome to danielpm1982.com",
+        description: "This is an Open Weather REST API client created with Node.js, npm, Webpack, Vue-cli, Vue.js, Vue-router, Vuex, Axios, Eslint, Babel, JavaScript ES6+, TypeScript and Electron.js ."
+      }
     },
     computed: {
       ...mapGetters(['getUsername', 'getUsernameColor']),
@@ -58,7 +62,7 @@
     }
     div.centralTextMain{
       width: 90%;
-      padding: 0em 0em 0em 0em;
+      padding: 0.05em 0em 0em 0em;
       font-size: 0.7em;
     }
   }

@@ -22,10 +22,10 @@
     @media screen and (max-width: 851px) {
         div.centralImageWeatherResponse{
             width: 50%;
-            margin: 0em auto 0em auto;
+            margin: 0.5em auto 0em auto;
         }
         img#weatherResponse{
-            width: 80px;
+            width: 70px;
         }
     }
 </style>

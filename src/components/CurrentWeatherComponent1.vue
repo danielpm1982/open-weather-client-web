@@ -20,10 +20,10 @@
     @media screen and (max-width: 851px) {
       div.centralImageOpenWeather{
         width: 90%;
-        margin: -0.4em auto -0.4em auto;
+        margin: -0.5em auto -1em auto;
       }
       img#openWeather{
-        width: 250px;
+        width: 170px;
       }
     }
 </style>

@@ -6,7 +6,7 @@
 <script lang="ts">
   import Vue from 'vue'
   export default Vue.extend({
-    name: 'LoginComponent1',
+    name: 'LoginComponent1'
   })
 </script>
 <style scoped>
@@ -23,7 +23,7 @@
             margin: 0.5em auto 0.5em auto;
         }
         img#login{
-            width: 90px;
+            width: 80px;
         } 
     }
 </style>

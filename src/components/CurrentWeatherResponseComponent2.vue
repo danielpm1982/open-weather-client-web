@@ -20,7 +20,7 @@
             <p>Last Updated: {{ getLastUpdateDateTime.dateString }} {{ getLastUpdateDateTime.timeString }}</p>
         </div>
         <footer id="footerTextWeatherResponse">
-            <p>Source: http://api.openweathermap.org/data/2.5/weather</p>
+            <span class="linkDescription">Source:</span><a target="_blank" :href="openWeatherCurrent">{{ openWeatherCurrent }}</a>
         </footer>
     </div>
 </template>
@@ -32,7 +32,8 @@
         name: 'CurrentWeatherResponseComponent2',
         data(){
             return {
-                weather: "" as unknown as WeatherInfoObjInterface
+                weather: "" as unknown as WeatherInfoObjInterface,
+                openWeatherCurrent: 'https://openweathermap.org/current'
             }
         },
         computed:{
@@ -42,7 +43,7 @@
                 const date = new Date(timeInMillis)
                 const dateString: string = date.toLocaleDateString()
                 const timeString: string = date.toLocaleTimeString()
-                return {dateString: dateString, timeString: timeString}
+                return { dateString: dateString, timeString: timeString }
             }
         },
         created(){
@@ -62,25 +63,31 @@
     }
     footer#footerTextWeatherResponse{
         text-align: center;
-        font-style: italic;
         margin-top: 2em;
         margin-bottom: 3em;
+        font-size: 0.9em;
     }
-    footer#footerTextWeatherResponse p{
-        font-size: 0.8em;
-        margin-top: 1em;
-        margin-bottom: 1em;
+    a{
+        text-decoration: none;
+    }
+    span.linkDescription{
+        color: greenyellow;
+        margin-right: 1em;
     }
     @media screen and (max-width: 851px) {
         div.centralTextWeatherResponse{
-            width: 90%;
+            width: 95%;
             padding: 0.5em;
-            font-size: 0.8em;
+            font-size: 0.7em;
             border: none;
         }
         footer#footerTextWeatherResponse{
-            margin-top: 0em;
-            margin-bottom: 2em;
+            margin-top: 0.5em;
+            margin-bottom: 3em;
+            font-size: 0.7em;
+        }
+        span.linkDescription{
+            margin-right: 0.5em;
         }
     }
 </style>
