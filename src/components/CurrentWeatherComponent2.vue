@@ -26,7 +26,7 @@
                 cityFormattedToURL: "",
                 unitsSystem: 'metric',
                 appid: 'c90bb6a51603a99515006429cd457dc0', //sample key
-                protocol: 'http://',
+                protocol: 'https://',
                 hostname: 'api.openweathermap.org'
             }
         },
